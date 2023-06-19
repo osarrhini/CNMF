@@ -10,16 +10,16 @@ function cnmf_left_ventricle_components(...
 %   heart_ijk: LV ROI voxel coordinates (N voxels x 3)
 %   indsOfLVCInHeart: Indices of left ventricle cavity (LVC) in the whole LV ROI
 %   indsOfMYOInHeart: Indices of myocardium (MYO) in the whole LV ROI
-%   nfactors: Number of foctors to be extracted (mainly 2)
-%   fmt: Mean frame time in seconds
+%   nfactors: Number of foctors to be extracted (supported 2)
+%   fmt: Frame Mean time in seconds
 %   liver_tac: Liver Time Activity curve (TAC)
 %   NormalizedData: If true, CNMF will use normalized data (Each row of heart_mat will be summed to 1)
 %   alpha and beta: regularization parameters
-%   dataUnits: Data Activity Units [Default '[prop.to cnts/sec]']
+%   dataUnits: Data Activity Units e.g. 'kBq/uL'; '%ID/g'; 'SUV' etc. [Default '[prop.to cnts/sec]']
 %   pn: Folder name where to save session data
 %   MaxIter: Maximum number of iterations [Default 5000]
-%   bs: Whould be a vector of two values [bst, bsIDg] where
-%   bst is the time in seconds and bsIDg is the activity value in %ID/g
+%   bs: Should be a vector of two values [bst, bsa] where
+%   bst is the time in seconds and bsa is the activity value in dataUnits
 %   of a late blood sample if any
 %
 % Note: All session data will be saved to a .mat file
