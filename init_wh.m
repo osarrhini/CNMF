@@ -13,8 +13,8 @@ function [w0, h0, D, M, bldi, myoi] = init_wh(heart_mat, heart_ijk, ...
 %   h0: Guess of H
 %   D: Matrix of Euclidian distance of each voxel to each ROI
 %   M: Matrix of masks (M(i, j) = 1 if and only if i=j else 0
-%   bldi: blood component number (from 1 to nfactors)
-%   myoi: Tissue component number (from 1 to nfactors)
+%   bldi: blood component number
+%   myoi: Tissue component number
 % **This code comes with no guarantee or warranty of any kind.**
 
 %% Normalize data
