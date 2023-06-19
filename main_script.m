@@ -33,7 +33,7 @@
 %       the manuscript.
 % -------------------------------------------------------------------------       
 
-% load(<path to your data as described above>)
+% load(<path to a file containing data as described above>)
 alpha = 0;
 beta = 0;
 
@@ -44,6 +44,6 @@ cnmf_left_ventricle_components(...
 
 % If Unconstrained NMF did not provide satisfactory results then :
 % change alpha and beta and call cnmf_left_ventricle_components until
-% you get satisfactory results.
+% you get satisfactory results (See the above suggestion).
 %  ########################################################################
 
